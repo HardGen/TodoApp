@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo__inner {
+    border-radius: 20px;
+    background: #f9f9f9;
+    padding: 20px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 900px;
+}
+
+.todo__title {
+    text-align: center;
+    font-size: 36px;
+}
+
+.todo__content {
+    margin-top: 25px;
+}
+
+.inp {
+    padding: 10px 15px;
+    min-width: 400px;
+    outline: none;
+}
+
+.todo__item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.todo__description {
+    min-width: 400px;
+    padding: 10px 15px;
+}
+
+.btn {
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: brown;
+    color: white;
+}
+
+.btn-change:hover {
+    background-color: rgb(192, 192, 192);
+    color: white;
+}
+
+.todo__item--completed {
+    text-decoration: line-through;
+}
+
+.completed {
+    inherits: unset;
+    text-decoration: line-through;
+    color: rgb(168, 168, 168);
+}
+
+.todo__created {
+    color: rgb(184, 184, 184);
+    font-size: 12px;
+
+}
+
+.active {
+    background-color: rgb(40, 40, 40);
+    border: none;
+    color: white;
+}

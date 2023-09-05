@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="todo">
+        <div class="container">
+            <div class="todo__inner">
+                <h2 class="todo__title">
+                    TodoList
+                </h2>
+                <div class="todo__content">
+                    <input class="todo__inp inp" type="text" placeholder="Задача">
+                    <button class="btn btn-create">Добавить</button>
+
+                    <ul class="todo__items">
+                    </ul>
+
+                    <div class="todo__filter">
+                        <button class="btn todo__filterBtn todo__allItems active">Все</button>
+                        <button class="btn todo__filterBtn todo__isActivedItems">Не выполненные</button>
+                        <button class="btn todo__filterBtn todo__CompletedItems">Выполненные</button>
+                        <a download="export.json" href="#" class="todo_export">Экспорт</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
